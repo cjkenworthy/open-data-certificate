@@ -17,5 +17,8 @@
 # Ignore local VM properties. 
 /.vagrant
 
+# Chef cookbooks (use librarian-chef to generate)
+/cookbooks
+
 
 /.DS_Store
