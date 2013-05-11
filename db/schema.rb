@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501140315) do
+ActiveRecord::Schema.define(:version => 20130503152550) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -128,6 +128,7 @@ ActiveRecord::Schema.define(:version => 20130501140315) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "api_id"
+    t.integer  "dataset_id"
   end
 
   add_index "response_sets", ["access_code"], :name => "response_sets_ac_idx", :unique => true
